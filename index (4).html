@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ISCAM Transportes de Carga</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+      color: #222;
+    }
+
+    header {
+      background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
+      url('https://images.unsplash.com/photo-1519003722824-194d4455a60c?q=80&w=1600&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+
+    header h1 {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+
+    header p {
+      font-size: 22px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    nav {
+      background: #00bcd4;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: black;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 42px;
+      margin-bottom: 50px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,.1);
+      transition: .3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 25px;
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      font-size: 28px;
+    }
+
+    .dark {
+      background: #111;
+      color: white;
+    }
+
+    .stats {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .stat {
+      background: #00bcd4;
+      color: black;
+      padding: 25px;
+      border-radius: 20px;
+      flex: 1;
+      min-width: 220px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    .contact {
+      background: #00bcd4;
+      text-align: center;
+      border-radius: 30px;
+      padding: 60px 20px;
+    }
+
+    .contact p {
+      margin: 15px 0;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      background: black;
+      color: white;
+      padding: 18px 40px;
+      border-radius: 15px;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    footer {
+      background: black;
+      color: gray;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media(max-width: 768px) {
+      header h1 {
+        font-size: 40px;
+      }
+
+      h2 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#servicios">Servicios</a>
+    <a href="#unidades">Unidades</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <header>
+    <h1>ISCAM Transportes</h1>
+    <p>
+      Más de 12 años ofreciendo soluciones de transporte de carga,
+      refrigerado y especializado en toda la República Mexicana.
+    </p>
+  </header>
+
+  <section id="servicios">
+    <h2>Servicios</h2>
+
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=1200&auto=format&fit=crop">
+        <div class="card-content">
+          <h3>Transporte General</h3>
+          <p>
+            Servicio de carga nacional con entregas a hospitales,
+            laboratorios, almacenes y particulares.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1200&auto=format&fit=crop">
+        <div class="card-content">
+          <h3>Transporte Refrigerado</h3>
+          <p>
+            Transporte seguro para alimentos y productos sensibles
+            con monitoreo GPS.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?q=80&w=1200&auto=format&fit=crop">
+        <div class="card-content">
+          <h3>Medicamentos</h3>
+          <p>
+            Soluciones especializadas para el traslado de medicamentos
+            y productos médicos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark" id="unidades">
+    <h2>Unidades</h2>
+
+    <p style="text-align:center; max-width:900px; margin:auto; font-size:22px; line-height:1.7;">
+      Contamos con camionetas de 1.5 toneladas, unidades de 5.5, 8 y 12 toneladas,
+      además de cajas de 53 pies para operaciones de gran volumen.
+    </p>
+
+    <div class="cards" style="margin-top:50px;">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=1200&auto=format&fit=crop">
+        <div class="card-content">
+          <h3>Torton</h3>
+          <p>
+            Unidades ideales para transporte industrial, alimentos y distribución nacional.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?q=80&w=1200&auto=format&fit=crop">
+        <div class="card-content">
+          <h3>Trailer de 53 Pies</h3>
+          <p>
+            Transporte de gran capacidad con cobertura en toda la República Mexicana.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat">12+ Años de experiencia</div>
+      <div class="stat">GPS en todas las unidades</div>
+      <div class="stat">Cobertura nacional</div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <div class="contact">
+      <h2>Contacto</h2>
+
+      <p>📞 55-5167-7868</p>
+      <p>✉️ transportes.iscam@gmail.com</p>
+      <p>📍 León, Guanajuato</p>
+
+      <a class="btn" href="https://wa.me/525551677868" target="_blank">
+        Contactar por WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 ISCAM Transportes de Carga - Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
